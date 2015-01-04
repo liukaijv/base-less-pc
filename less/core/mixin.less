@@ -1,0 +1,14 @@
+// 字体大小用rem单位，不支持的用px
+.font-size (@size) {
+	@remValue: @size / @globle-font-size;
+	@pxValue: (@size);
+	font-size: ~"@{pxValue}px"; 
+	font-size: ~"@{remValue}rem";
+}
+// 行高
+.line-height (@size) {
+	@remValue: @size / @globle-font-size;
+	@pxValue: (@size);
+	line-height: ~"@{pxValue}px"; 
+	line-height: ~"@{remValue}rem";
+}

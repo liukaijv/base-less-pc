@@ -1,0 +1,256 @@
+// reset 
+html{
+	font-size: 100%;
+	background-color: #fff;
+	color: #333;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-rendering:optimizelegibility;
+	-moz-osx-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	&.border-box{		
+		*,
+		*:after,
+		*:before{
+			*behavior: url(../js/boxsizing.htc);
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;		
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+	}
+}
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section{
+	margin:0;
+	padding:0;
+}
+article, aside, details, figcaption, figure, footer, header, menu, nav, section,iframe{
+	display:block;
+}
+audio, canvas, video{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+button, input, select, textarea, optgroup{	;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button; 	
+}
+button,input,select{
+	// line-height: 1;
+	overflow: auto;
+	vertical-align: middle;
+}
+::-webkit-input-placeholder {
+	color: #ccc;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #ccc;
+}
+button::-moz-focus-inner,
+input[type='button']::-moz-focus-inner,
+input[type='reset']::-moz-focus-inner,
+input[type='submit']::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+textarea{
+	resize: vertical;
+	overflow: auto;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0; 
+}
+ul,ol{
+	list-style: none;
+}
+div,textarea,th,th{
+	word-break: break-all;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+table{
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+th{
+	text-align: inherit;
+}
+img{
+	height: auto;
+	vertical-align: middle;
+	border: none;
+	-ms-interpolation-mode:bicubic;
+}
+//  common classes
+.clearfix{
+	*zoom:1;
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+.clear{
+	clear: both;
+}
+.abs{
+	position: absolute;
+}
+.rel{
+	position: relative;
+}
+.mod{
+	overflow: hidden;
+	*zoom:1;
+}
+.left{
+	float: left;
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+.right{
+	float: right;
+}
+// text 
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-justify{
+	text-align: justify;
+}
+.text-middle{
+	vertical-align: middle;
+}
+.text-top{
+	vertical-align: top;
+}
+.text-bottom{
+	vertical-align: bottom;
+}
+// font style
+.bold{
+	font-weight: bold;	
+}
+.italic{
+	font-style: italic;
+}
+.none,
+.hide,
+[hidden]{
+	display: none;
+}
+.blk,
+.show{
+	display: block;
+}
+.inblk{
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.visually-hidden { 
+	position: absolute !important;
+	border: 0 !important;
+	height: 1px !important; 
+	width: 1px !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	*clip: rect(1px 1px 1px 1px); 
+}
+.img-preserve{
+	max-width: none;
+}
+.text-nowrap{
+	overflow: hidden;
+	white-space: nowrap;
+}
+.text-truncate{	
+	word-wrap: normal; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	_width:95%;
+}
+.text-break{
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.text-indent2{
+	text-indent: 2em;
+}
+.text-hide{
+	text-indent: -9999em;
+	overflow: hidden;
+}
+.checkbox,.radio{
+	vertical-align: middle;
+	margin: 1px 0 -1px 0;
+}
+.skip-link{
+	position: absolute;	
+	& a {
+		position: absolute;
+		overflow: hidden;
+		clip: rect(1px, 1px, 1px, 1px);		
+		background: black;
+		color: white;
+		text-decoration: none;		
+		&:focus {
+			position: static;
+			overflow: visible;
+			clip: auto;
+		}
+	}
+}
+.font-yaihei{
+	font-family:'Microsoft Yahei';
+}
+.font-arial{
+	font-family: Arial;
+}
+.font-simsun{
+	font-family: Simsun;
+}
+.arrow-down{
+	.inblk;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border: 6px solid transparent;
+	border-top: 6px solid #fff;	
+	vertical-align: middle;
+}

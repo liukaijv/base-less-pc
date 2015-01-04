@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "core/variables";
+@import "core/mixin";
+@import "core/base";
+@import "core/helper";
+
+body{
+	font-family: @font-family-pc;
+	// font-family: @font-family-pc-yahei;
+	font-size: @default-font-size;
+	line-height: @default-line-height;
+	color: #333;
+}
+a{
+	color: #333;
+	&:hover{
+		text-decoration: none;
+	}
+}
+img{
+	max-width: 100%;
+}
+
+// start
+.container{
+	width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
+	.clearfix;
+}
