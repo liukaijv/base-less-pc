@@ -176,6 +176,7 @@ img{
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
+	vertical-align: middle;
 }
 .visually-hidden { 
 	position: absolute !important;
@@ -253,4 +254,15 @@ img{
 	border: 6px solid transparent;
 	border-top: 6px solid #fff;	
 	vertical-align: middle;
+}
+.vafter{
+	&:after{
+		content: "";
+		display: inline-block;
+		font-size: 0;
+		width: 0;
+		height: 100%;
+		overflow: hidden;
+		vertical-align: middle;
+	}
 }
