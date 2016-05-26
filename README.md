@@ -1,4 +1,4 @@
 cssbase
 =======
 
-base stylesheet for pc
+the less version base stylesheet for pc
